@@ -42,12 +42,9 @@ $ php artisan db:seed
 
 **General Workflow**
 
+Open a terminal
 ```
-$ php artisan serve --host=0
-```
-Open new terminal
-```
-$ gulp && gulp watch
+npm start
 ```
 
 > Default Username/Password: admin@example.com / password
