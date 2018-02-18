@@ -129,6 +129,50 @@ export function RoutesConfig ($stateProvider, $urlRouterProvider) {
         }
       }
     })
+    .state('app.chartmorris',{
+        url: '/charts-morris',
+        data: {
+            auth: true
+        },
+        views: {
+            'main@app': {
+                template: '<charts-morris></charts-morris>'
+            }
+        }
+    })
+    .state('app.chartflot',{
+        url: '/charts-flot',
+        data: {
+            auth: true
+        },
+        views: {
+            'main@app': {
+                template: '<charts-flot></charts-flot>'
+            }
+        }
+    })
+    .state('app.chartinline',{
+        url: '/charts-inline',
+        data: {
+            auth: true
+        },
+        views: {
+            'main@app': {
+                template: '<charts-inline></charts-inline>'
+            }
+        }
+    })
+    .state('app.blank',{
+        url: '/blank',
+        data: {
+            auth: true
+        },
+        views: {
+            'main@app': {
+                template: '<blank></blank>'
+            }
+        }
+    })
     .state('app.comingsoon', {
       url: '/comingsoon',
       data: {

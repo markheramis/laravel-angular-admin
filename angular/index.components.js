@@ -1,3 +1,8 @@
+import { TablesDatatablesComponent } from './app/components/tables-datatables/tables-datatables.component';
+import { ChartsInlineComponent } from './app/components/charts-inline/charts-inline.component';
+import { ChartsFlotComponent } from './app/components/charts-flot/charts-flot.component';
+import { ChartsMorrisComponent } from './app/components/charts-morris/charts-morris.component';
+import { BlankComponent } from './app/components/blank/blank.component';
 import { TablesSimpleComponent } from './app/components/tables-simple/tables-simple.component'
 import { UiModalComponent } from './app/components/ui-modal/ui-modal.component'
 import { UiTimelineComponent } from './app/components/ui-timeline/ui-timeline.component'
@@ -28,6 +33,11 @@ import { LoginFormComponent } from './app/components/login-form/login-form.compo
 import { RegisterFormComponent } from './app/components/register-form/register-form.component'
 
 angular.module('app.components')
+  .component('tablesDatatables', TablesDatatablesComponent)
+  .component('chartsInline', ChartsInlineComponent)
+  .component('chartsFlot', ChartsFlotComponent)
+  .component('chartsMorris', ChartsMorrisComponent)
+  .component('blank', BlankComponent)
   .component('tablesSimple', TablesSimpleComponent)
   .component('uiModal', UiModalComponent)
   .component('uiTimeline', UiTimelineComponent)
